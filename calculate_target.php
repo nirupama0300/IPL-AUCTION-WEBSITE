@@ -54,8 +54,6 @@
         // Bind parameters
         $stmt->bind_param("sdddd", $bidderName, $totalRuns, $totalOvers, $totalWickets, $target);
 
-        // Loop through each bidder to insert data into the table and calculate target
-
 
             // Calculate the target score for each bidder
             $target = (($totalRuns / $totalOvers) * ($totalWickets / 20));
